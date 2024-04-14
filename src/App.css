@@ -1,0 +1,14 @@
+.task-form-cont{
+    position: fixed;
+    inset: 0;
+    
+}
+
+form{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,.3);
+};
+
+i{
+    pointer-events: none !important;
+}
