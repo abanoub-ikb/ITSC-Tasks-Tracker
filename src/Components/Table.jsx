@@ -22,7 +22,7 @@ export default function Table({onEdit,onDelete}){
             <tbody>
                 {tasks.map((el,index) => {
                     el.status = el.isCompleted? el.status : calculateTaskRemainingTime(el.start,el.end);
-                    el.progress = calculateTaskProgress(el.totalH,el.workedHours)
+                    el.progress = el.isCompleted? el.progress : calculateTaskProgress(el.totalH,el.workedHours)
                     return (
                         <tr key={el.name}>
                             <td>{index+1}</td>
